@@ -1,0 +1,95 @@
+*{
+    color: #ededee;
+    font-family: sans-serif;
+}
+
+.game{
+    display: grid;
+    margin: 2rem auto;
+    width: 1000px;
+    background-image: url('../images/background.jpg');
+    padding-block: 1rem;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.move{
+    display: flex;
+    justify-content: space-around;
+}
+
+@keyframes shake{
+    0%{transform: translateY(0);}
+    10%{transform: translateY(-10px);}
+    20%{transform: translateY(10px);}
+    30%{transform: translateY(-10px);}
+    40%{transform: translateY(10px);}
+    50%{transform: translateY(-10px);}
+    60%{transform: translateY(10px);}
+    70%{transform: translateY(-10px);}
+    80%{transform: translateY(10px);}
+    90%{transform: translateY(-10px);}
+    100%{transform: translateY(0);}
+}
+
+.move .move-container{
+    background-color: #e2ecff;
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+}
+
+.move img{
+    width: 15rem;
+}
+
+.move img.wait-move{
+    animation: shake 1s;
+}
+
+.choose{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.moves{
+    display: flex;
+    gap: 1rem;
+}
+
+.moves.hide{
+    display: none;
+}
+
+.replay{
+    background-color: #2e8fff;
+    font-size: 1.5rem;
+    padding: .3rem 1.5rem;
+    border: none;
+    opacity: .8;
+    border-radius: 10px;
+    display: none;
+}
+
+.replay.show{
+    display: block;
+}
+
+.move-btn{
+    background-color: #e2ecff;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.move-btn img{
+    width:100%;
+}

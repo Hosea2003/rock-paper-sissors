@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper sissors</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="game">
+        <div class="header">
+            <h2 class="score" id="player-score">0</h2>
+            <h1 id="title">Your move</h1>
+            <h2 class="score" id="computer-score">0</h2>
+        </div>
+        <div class="move">
+            <div class="move-container"><img src="assets/images/rock.png" alt="" id="player-move"></div>
+            <div class="move-container"><img src="assets/images/rock.png" alt="" id="computer-move"></div>
+        </div>
+        <div class="choose">
+            <h2>Choose your move</h2>
+            <div class="moves">
+                <button class="move-btn" id="rock"><img src="assets/images/rock.png" alt=""></button>
+                <button class="move-btn" id="paper"><img src="assets/images/paper.png" alt=""></button>
+                <button class="move-btn" id="sissors"><img src="assets/images/sissors.png" alt=""></button>
+            </div>
+            <div class="replay-container">
+                <button class="replay">Replay</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
